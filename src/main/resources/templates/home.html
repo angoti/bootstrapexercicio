@@ -7,11 +7,124 @@
         <!-- adicionar o link para o bootstrap aqui -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link href="/estilos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     </head>
 
-    <body>
-        <nav></nav>
-        <main></main>
-        <footer></footer>
+    <body class="container">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">File</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Edit</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">View</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <!-- carousel -->
+            <section id="carouselExampleIndicators" class="carousel slide mt-1" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            src="https://via.placeholder.com/800x200?text=Primeira imagem"
+                            class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="https://via.placeholder.com/800x200?text=Segunda imagem"
+                            class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="https://via.placeholder.com/800x200?text=Terceira imagem"
+                            class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </section>
+            <!-- 3 colunas -->
+            <section>
+                <div class="row mt-2">
+                    <div class="col">
+                        <div class="img-thumbnail d-flex justify-content-center">
+                            <img height="150"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Ug8a25QP3AKLz_r2_kl7DzsDN7MilJhEukf6AcXQhYcurMxiJey71n1_HfirBP6ncKI&usqp=CAU">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <p class="text-break">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                    <div class="col d-flex flex-column justify-content-between">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                checkbox 1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                checkbox 2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                checkbox 3
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- campo de busca -->
+            <section class="row mt-3 d-flex justify-content-center">
+                <form class="col-8" role="search">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi-search"></i></span>
+                        <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer class="footer text-center mt-5 bg-secondary d-flex align-items-center justify-content-center" style="height: 50px">&copy Footer</footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     </body>
 </html>
