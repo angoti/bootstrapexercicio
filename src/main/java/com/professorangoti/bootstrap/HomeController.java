@@ -10,4 +10,8 @@ public class HomeController {
     public String resolveExercicio(){
         return "home";
     }
+    @GetMapping("file")
+    public String navega(){
+        return "outrapagina";
+    }
 }
