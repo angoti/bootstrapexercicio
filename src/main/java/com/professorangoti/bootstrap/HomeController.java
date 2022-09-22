@@ -7,11 +7,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomeController {
     
     @GetMapping("exercicio-bootstrap")
-    public String resolveExercicio(){
+    public String resolveExercicio() {
         return "home";
     }
+    
     @GetMapping("file")
-    public String navega(){
+    public String navega() {
         return "outrapagina";
+    }
+    
+    @GetMapping("modelo")
+    public String temp(){
+        return "teste";
     }
 }

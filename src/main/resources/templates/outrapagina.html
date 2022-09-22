@@ -12,13 +12,13 @@
     </head>
 
     <body class="container">
-        <nav th:insert="home::barra-de-navegação"></nav>
+        <nav th:replace="fragments/fragmentos::barra-de-navegação"></nav>
         <main>
 
             <!-- 2 colunas -->
             <section>
                 <div class="row m-2">
-                   
+
                     <div class="col">
                         <p class="text-break">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
@@ -48,8 +48,8 @@
             </section>
 
         </main>
-       
-        <footer th:insert="home::rodape"></footer>
+
+        <footer th:replace="fragments/fragmentos::rodape"></footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     </body>
